@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'">
-  <meta name="description" content="How BlockTilt handles local records, optional Game Center, support messages, and this support website.">
+  <meta name="description" content="How BlockTilt handles local records, Game Center, AdMob advertising, No Ads purchases, support messages, and this website.">
   <link rel="canonical" href="https://atlasunit01.github.io/blocktilt-support/privacy.html">
   <link rel="stylesheet" href="styles.css">
   <title>BlockTilt privacy policy</title>
@@ -25,13 +25,13 @@
     <div class="page-heading">
       <h1>Privacy policy</h1>
       <p class="secondary">Last updated: 13 September 2026</p>
-      <p class="lead">BlockTilt saves your progress locally and uses Apple's Game Center only when you connect it.</p>
-      <p>This policy covers the BlockTilt iPhone app, support correspondence, and this support website. BlockTilt is free, with no ads or in-app purchases. The developer does not operate a gameplay backend or add advertising, tracking, or analytics services to the app.</p>
+      <p class="lead">BlockTilt saves progress locally, offers optional Game Center, and uses Google AdMob for ads between runs.</p>
+      <p>This policy covers the BlockTilt iPhone app, support correspondence, and this support website. The app is free to download with an optional one-time No Ads purchase handled by Apple. The developer does not operate a gameplay or payment backend. Advertising providers process information as described below.</p>
     </div>
 
     <section aria-labelledby="local-heading">
       <h2 id="local-heading">Information stored on your device</h2>
-      <p>The app stores your best score, last score, number of completed runs, sound and haptic preferences, and whether you disconnected Game Center in BlockTilt. These records support local gameplay and settings; they are not sent to a developer-operated server.</p>
+      <p>The app stores your best score, last score, number of completed runs, sound and haptic preferences, and whether you disconnected Game Center in BlockTilt. It also saves active-play time and the last evaluated run identifier to space ads between completed runs. These app-owned records are not sent to a developer-operated server or supplied by BlockTilt's code as advertising profile information.</p>
       <p>When you are connected to Game Center, the app also stores a pending best score if delivery to Apple has not completed. This record contains the score, the leaderboard identifier, and an opaque Game Center player identifier so a retry goes to the same account. It does not contain your Apple account password or email address.</p>
       <p>A pending record is removed after successful delivery for that account. It may remain while disconnected or offline. Local records remain until the app's data is removed, and may be included in device backups according to your iPhone settings.</p>
     </section>
@@ -42,6 +42,21 @@
       <p>Game Center handles its account, social, and leaderboard information under <a href="https://www.apple.com/legal/privacy/data/en/game-center/" rel="noreferrer">Apple's Game Center &amp; Privacy information</a>.</p>
       <p>You can play locally without Game Center. <strong>Disconnect from BlockTilt</strong> stops further app-initiated score sharing while disconnected; a request already sent to Apple may still finish. Disconnecting does not delete scores already submitted, clear pending local records, or sign the Apple account out. Reconnecting the same account can resume pending score delivery.</p>
       <p>Use iPhone Settings → Game Center to manage the Apple account and its privacy settings. Runs played while disconnected are not queued for a later account.</p>
+    </section>
+
+    <section aria-labelledby="advertising-heading" id="advertising">
+      <h2 id="advertising-heading">Advertising and consent</h2>
+      <p>Google AdMob provides interstitial ads after completed runs once at least 120 seconds of active play have accumulated. Menus, idle time, background time, ads, and purchases do not count. Ads may be loaded in advance; an unavailable ad does not prevent continued play.</p>
+      <p>Google's SDK may process IP-derived approximate location, device identifiers, advertising and interaction data, crash information, and performance data for advertising, measurement, and service operation. These activities occur through the advertising service even though the developer has no separate gameplay server. See <a href="https://developers.google.com/admob/ios/privacy/data-disclosure" rel="noreferrer">Google's SDK data disclosure</a> and <a href="https://policies.google.com/privacy" rel="noreferrer">Google's Privacy Policy</a>.</p>
+      <p>BlockTilt uses Google's User Messaging Platform to request or update advertising consent and provide privacy options where required. The app waits for that service to permit ad requests, requests non-personalized ads with general-audience content, and disables publisher personalization. In Settings, <strong>Ad privacy choices</strong> appears when Google's service requires it, including for existing users who purchase No Ads.</p>
+      <p>BlockTilt does not request Apple's App Tracking Transparency permission or IDFA authorization. The absence of that prompt does not mean that Google receives no information. Consent choices, device restrictions, and the provider's configuration affect data handling; Google manages its own retention and privacy controls.</p>
+    </section>
+
+    <section aria-labelledby="purchases-heading" id="purchases">
+      <h2 id="purchases-heading">No Ads purchases</h2>
+      <p>No Ads is a one-time purchase. The App Store displays your local price and final terms before payment. Apple handles payment and purchase history. BlockTilt receives verified transaction information, including product and transaction identifiers and entitlement or revocation status, to unlock No Ads and restore ownership.</p>
+      <p>The app does not receive payment-card details or send transaction records to a developer-operated server. <strong>Restore Purchases</strong> in Settings asks Apple to synchronize purchases for the current App Store account and may require authentication.</p>
+      <p>A verified No Ads purchase removes in-game advertising and stops new app-initiated ad loads. A request already in progress may complete. Purchasing does not erase information previously received by Google, remove Apple's purchase history, or disconnect Game Center. Apple handles purchase information under its <a href="https://www.apple.com/legal/privacy/" rel="noreferrer">Privacy Policy</a>.</p>
     </section>
 
     <section aria-labelledby="support-heading">
@@ -62,7 +77,9 @@
       <ul>
         <li>Play without connecting Game Center.</li>
         <li>Disconnect Game Center inside BlockTilt, or manage the Apple account in iPhone Settings.</li>
-        <li>Remove the app and its local data using your iPhone's storage controls. This does not delete Apple's leaderboard records or existing device backups.</li>
+        <li>Review Ad Privacy Choices in Settings when available, or purchase No Ads to remove in-game advertising.</li>
+        <li>Use Restore Purchases to restore an existing No Ads purchase for the same App Store account.</li>
+        <li>Remove the app and its local data using your iPhone's storage controls. This does not delete provider-held information, Apple's leaderboard or purchase records, or existing device backups.</li>
         <li>Contact support about the correspondence you have sent or questions about this policy.</li>
       </ul>
     </section>
